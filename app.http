@@ -1,0 +1,47 @@
+GET http://localhost:3000/movies/
+
+###
+
+
+GET http://localhost:3000/movies/71/
+
+###
+
+
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldblum"
+}
+
+###
+
+
+PUT http://localhost:3000/movies/73/
+Content-Type: application/json
+
+
+{
+  "directorId": 24,
+  "movieName": "Sirivennela",
+  "leadActor": "PrudhiviRaj Chris Hemsworth"
+}
+
+###
+
+DELETE http://localhost:3000/movies/71/
+
+###
+
+
+GET http://localhost:3000/directors/
+
+###
+
+
+
+GET http://localhost:3000/directors/12/movies
+
